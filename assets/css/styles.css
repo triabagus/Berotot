@@ -237,6 +237,11 @@ img {
   color: var(--title-color);
   cursor: pointer;
 }
+
+.nav .nav__button{
+  background: var(--title-color);
+  border: none;
+}
 /* Show menu */
 .show-menu{
   right: 0;
@@ -318,7 +323,37 @@ img {
 }
 
 /*=============== BUTTON ===============*/
+.button{
+  display: inline-block;
+  background: var(--first-color);
+  padding: 18px 32px;
+  border: 2px solid var(--first-color-light);
+  color: var(--title-color-black);
+  font-weight: var(--font-bold);
+  cursor: pointer;
+  transition: background .3s;
+}
 
+.button:hover{
+  background: var(--first-color-alt);
+}
+
+
+.button i{
+  font-size: 1.25rem;
+  transition: transform .3s;
+}
+
+.button__flex{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: .5rem;
+}
+
+.button__flex:hover i{
+  transform: translateX(.25rem);
+}
 
 /*=============== LOGOS ===============*/
 
